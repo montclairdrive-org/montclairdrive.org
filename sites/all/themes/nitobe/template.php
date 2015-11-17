@@ -1,5 +1,4 @@
 <?php
-// $Id: template.php,v 1.47 2010/11/28 21:38:23 shannonlucas Exp $
 /**
  * @file
  * The core functions for the Nitobe theme.
@@ -510,7 +509,9 @@ function _nitobe_build_footer_columns(&$variables) {
  *   - nitobe_tabs_secondary: The array of secondary tabs for this page.
  */
 function nitobe_preprocess_page(&$variables) {
-  $variables["nitobe_tabs_primary"]   = $variables["tabs"]['#primary'];
+  if(isset($variables["tabs"]['#primary'])){
+    $variables["nitobe_tabs_primary"]   = $variables["tabs"]['#primary'];
+  }
   $variables["nitobe_tabs_secondary"] = $variables["tabs"]['#secondary'];
   
   // -- Determine which layout to use.
@@ -546,7 +547,7 @@ function nitobe_process_page(&$variables) {
     $classes_array = array("page-title");
     $title   = $variables["title"];
 
-    if ($variables["tabs"]["#primary"]) {
+    if (isset($variables["tabs"]["#primary"])) {
       $classes_array[] = "with-tabs";
     }
 
@@ -717,19 +718,17 @@ function nitobe_set_layout(&$variables) {
   $has_second = (($layout == "second") || ($layout == "both"));
 
   $content = nitobe_ns("grid-16", $has_first, 4, $has_second, 4);
-  $variables["nitobe_content_width"]                      = $content;
+  $variables["page"]["content"]["#nitobe_classes"]        = array($content);
   $variables["page"]["sidebar_first"]["#nitobe_classes"]  = array("grid-4");
   $variables["page"]["sidebar_second"]["#nitobe_classes"] = array("grid-4");
 
   // -- The grid class for items in the main column.
-  $variables["nitobe_content_width"] =
-    nitobe_ns("grid-16", $has_first, 4, $has_second, 4);
-
+  $variables["nitobe_content_width"] = $content;
 
   // -- Add the push/pull classes.
   $push_pull = _nitobe_get_push_pull();
 
-  foreach (array("sidebar_first", "sidebar_second") as $region) {
+  foreach (array("content", "sidebar_first", "sidebar_second") as $region) {
     if (isset($push_pull[$placement][$layout][$region])) {
       $variables["page"][$region]["#nitobe_classes"][] =
         $push_pull[$placement][$layout][$region];
@@ -751,7 +750,7 @@ function _nitobe_random_header_js() {
   $names = array();
 
   foreach ($files as $file => $data) {
-    $names[] = $base_url . '/' . $file;
+    $names[] = url($file, array('absolute' => TRUE));
   }
 
   $names_js = drupal_json_encode($names);
@@ -778,7 +777,7 @@ EOJS;
 function _nitobe_fixed_header_css($filename) {
   global $base_url;
 
-  $url    = $base_url . "/" . $filename;
+  $url    = url($filename, array('absolute' => TRUE));
   $output = ".region-masthead{background-image:url(%s);}";
 
   return sprintf($output, $url);

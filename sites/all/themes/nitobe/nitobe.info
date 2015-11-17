@@ -1,6 +1,5 @@
   ; --------------------------------------------------------------------------
   ; Basic information about the theme.
-  ; $Id: nitobe.info,v 1.18 2010/11/27 01:36:29 shannonlucas Exp $
   ; --------------------------------------------------------------------------
 name        = Nitobe
 description = "Clean, fixed-width theme with rotating masthead image."
@@ -73,9 +72,9 @@ settings[nitobe_node_datestamp_format]  = "d M Y"
 settings[nitobe_pager_page_count]       = 5
 settings[nitobe_title_effect]           = TRUE
 
-; Information added by drupal.org packaging script on 2010-11-28
-version = "7.x-2.0-beta1"
+; Information added by drupal.org packaging script on 2013-10-01
+version = "7.x-2.0-beta1+6-dev"
 core = "7.x"
 project = "nitobe"
-datestamp = "1290980761"
+datestamp = "1380593122"
 

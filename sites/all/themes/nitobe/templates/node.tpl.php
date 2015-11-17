@@ -1,5 +1,4 @@
 <?php
-// $Id: node.tpl.php,v 1.8 2010/11/16 15:36:36 shannonlucas Exp $
 /**
  * @file
  * The node rendering logic for Nitobe.

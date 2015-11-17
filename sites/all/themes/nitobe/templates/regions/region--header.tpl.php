@@ -1,5 +1,4 @@
 <?php
-// $Id: region--header.tpl.php,v 1.1 2010/11/14 03:24:00 shannonlucas Exp $
 /**
  * @file
  * Header region for Nitobe.

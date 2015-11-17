@@ -1,5 +1,4 @@
 <?php
-// $Id: block.tpl.php,v 1.6 2010/11/16 15:36:36 shannonlucas Exp $
 /**
  * @file
  * Block rendering for Nitobe.

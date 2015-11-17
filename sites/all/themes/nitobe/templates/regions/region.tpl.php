@@ -1,5 +1,4 @@
 <?php
-// $Id: region.tpl.php,v 1.3 2010/11/14 06:11:26 shannonlucas Exp $
 /**
  * @file
  * The generic region template for Nitobe.

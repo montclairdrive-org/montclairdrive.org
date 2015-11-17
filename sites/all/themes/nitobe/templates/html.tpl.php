@@ -1,5 +1,4 @@
 <?php
-// $Id: html.tpl.php,v 1.4 2010/11/16 15:36:36 shannonlucas Exp $
 /**
  * @file
  * Provide's Nitobe's rendering for content contained in HTML.

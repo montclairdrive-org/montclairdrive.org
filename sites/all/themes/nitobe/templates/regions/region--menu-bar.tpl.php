@@ -1,5 +1,4 @@
 <?php
-// $Id: region--menu-bar.tpl.php,v 1.3 2010/11/26 06:17:01 shannonlucas Exp $
 /**
  * @file
  * The menu bar for Nitobe.

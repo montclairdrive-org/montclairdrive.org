@@ -1,5 +1,4 @@
 <?php
-// $Id: region--title-group.tpl.php,v 1.3 2010/11/16 15:36:36 shannonlucas Exp $
 /**
  * @file
  * Handles rendering the site title for Nitobe.

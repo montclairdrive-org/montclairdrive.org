@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 /**
  * @file reset.css
  * Eric Meyer's Reset CSS
@@ -11,7 +11,6 @@
  *   - transparent background for table elements is removed as this causes 
  *     problems with tables added by hand in node bodies.
  *
- * $Id: reset.css,v 1.2 2010/10/21 02:39:36 shannonlucas Exp $
  */
 
 

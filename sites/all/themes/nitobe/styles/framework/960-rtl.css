@@ -1,9 +1,8 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 /**
  * @file 960-rtl.css
  * Provides right-to-left language support for 16 column grid.
  *
- * $Id: 960-rtl.css,v 1.2 2010/10/21 02:39:36 shannonlucas Exp $
  */
 
 /* ****************************************************************************

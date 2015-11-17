@@ -1,5 +1,4 @@
 <?php
-// $Id: page.tpl.php,v 1.15 2010/11/28 21:38:23 shannonlucas Exp $
 /**
  * @file
  * The variable-layout page structure for Nitobe.

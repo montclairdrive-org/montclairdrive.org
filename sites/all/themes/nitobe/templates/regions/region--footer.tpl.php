@@ -1,5 +1,4 @@
 <?php
-// $Id: region--footer.tpl.php,v 1.2 2010/11/14 03:24:00 shannonlucas Exp $
 /**
  * @file
  * The footer region for Nitobe.

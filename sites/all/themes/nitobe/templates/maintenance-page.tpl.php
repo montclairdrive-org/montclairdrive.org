@@ -1,5 +1,4 @@
 <?php
-// $Id: maintenance-page.tpl.php,v 1.6 2010/10/23 12:56:27 pl2 Exp $
 /**
  * @file
  * Provides a custom maintenance notice page for Nitobe.

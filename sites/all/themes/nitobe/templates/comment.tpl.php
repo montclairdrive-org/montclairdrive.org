@@ -1,5 +1,4 @@
 <?php
-// $Id: comment.tpl.php,v 1.6 2010/11/26 06:17:01 shannonlucas Exp $
 /**
  * @file
  * Comment rendering for Nitobe.

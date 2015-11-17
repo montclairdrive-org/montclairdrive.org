@@ -1,5 +1,4 @@
 <?php
-// $Id: theme-settings.php,v 1.17 2010/11/27 01:36:29 shannonlucas Exp $
 /**
  * @file
  * Provides the settings for the Nitobe theme.

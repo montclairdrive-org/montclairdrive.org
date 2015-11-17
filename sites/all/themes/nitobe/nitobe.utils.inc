@@ -1,5 +1,4 @@
 <?php
-// $Id: nitobe.utils.inc,v 1.3 2010/11/27 01:36:29 shannonlucas Exp $
 /**
  * @file
  * Various utility functions used by Nitobe.
