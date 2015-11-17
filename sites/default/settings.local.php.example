@@ -1,0 +1,19 @@
+<?php
+
+$databases = array (
+  'default' =>
+  array (
+    'default' =>
+    array (
+      'database' => 'montclaird7',
+      'username' => 'someuser',
+      'password' => 'somepass',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
+
+$update_free_access = TRUE;
