@@ -1,0 +1,14 @@
+APIVersion: "1"
+name: montclair
+type: drupal7
+docroot: docroot
+provider: default
+
+# Certain ddev commands can be extended to run tasks before or after the ddev
+# command is executed.
+# See https://ddev.readthedocs.io/en/latest/users/extending-commands/ for more
+# information on the commands that can be extended and the tasks you can define
+# for them.
+# hooks:
+#   post-import-db:
+#     - exec: "drush cc all"
